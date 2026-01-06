@@ -1,0 +1,96 @@
+<section id="contact" class="w-3/4 mx-auto py-24 relative" >
+     <div class="bg-gray-200 backdrop-blur-sm  rounded-3xl p-8 border border-gray-800">
+
+         <h2 class="text-4xl md:text-5xl font-bold mb-16">Contact Us...</h2>
+          <div class="space-y-6">
+            <div>
+              <input 
+                type="text"
+                placeholder="Your Name"
+                
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
+                required
+              />
+            </div>
+            
+            <div>
+              <input 
+                type="email"
+                placeholder="Your Email"
+                
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
+                required
+              />
+            </div>
+            
+            <div>
+              <textarea 
+                placeholder="Your Message"
+              
+                rows="6"
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-3xl text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition resize-none"
+                required
+              ></textarea>
+            </div>
+            
+            <button class="w-full py-4 bg-green-500 text-black rounded-full hover:bg-green-600 transition font-semibold text-lg" >
+              Submit
+            </button>
+          </div>
+        </div>
+</section>
+      
+ 
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">
+           <img src="imges/Gemini_Generated_Image_ev7fooev7fooev7f-removebg-preview.png" class="w-[150px] h-[70px]" alt=" Logo" />
+          </div>
+          <p class="text-gray-400 text-sm">
+            Your journey to fitness starts here. Get fit, get strong, get healthy.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a (click)="scrollToSection('home')" class="hover:text-green-500 transition cursor-pointer">Home</a></li>
+            <li><a (click)="scrollToSection('gallery')" class="hover:text-green-500 transition cursor-pointer">Gallery</a></li>
+            <li><a (click)="scrollToSection('plans')" class="hover:text-green-500 transition cursor-pointer">Plans</a></li>
+            <li><a (click)="scrollToSection('trainers')" class="hover:text-green-500 transition cursor-pointer">Trainers</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">Contact Info</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>📧 info@goym.com</li>
+            <li>📞 +1 (555) 123-4567</li>
+            <li>📍 123 Fitness St, City</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 hover:text-black transition">
+              <span class="text-sm font-bold">f</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 hover:text-black transition">
+              <span class="text-sm font-bold">tw</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 hover:text-black transition">
+              <span class="text-sm font-bold">in</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 GOYM. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
