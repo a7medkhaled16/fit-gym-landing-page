@@ -1,126 +1,185 @@
 
 
 <!-- Gallery Section -->
-  <section id="gallery" class="py-24 relative">
-     
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute top-20 left-0 w-64 h-64 opacity-20">
-        <div class="space-y-4">
-          <div class="flex space-x-4" >
-            <div class="w-4 h-4 bg-green-500 rounded-full"></div>
-            <div class="w-4 h-4 bg-green-500 rounded-full"></div>
-          </div>
-        </div>
+<section id="gallery" class="py-24 relative overflow-hidden dark:bg-black">
+  
+  <!-- Advanced Animated Background -->
+  <div class="absolute inset-0">
+    
+    <!-- Flowing Gradient Waves -->
+    <div class="absolute inset-0">
+      <div class="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-green-500/10 to-transparent animate-wave"></div>
+      <div class="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-emerald-500/10 to-transparent animate-wave-reverse"></div>
+    </div>
+
+    <!-- Animated Particle Grid -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="grid grid-cols-12 grid-rows-12 gap-4 h-full w-full p-8">
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 0s;"></div>
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 0.5s;"></div>
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 1s;"></div>
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 1.5s;"></div>
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 2s;"></div>
+        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping" style="animation-delay: 2.5s;"></div>
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <h2 class="text-4xl md:text-5xl font-bold mb-16">OUR GALLERY...</h2>
+    <!-- Floating Geometric Shapes -->
+    <div class="absolute top-40 left-20 w-20 h-20 border-2 border-green-500/30 rotate-45 animate-float-rotate"></div>
+    <div class="absolute bottom-40 right-32 w-16 h-16 border-2 border-emerald-500/30 animate-spin-slow-reverse"></div>
+    <div class="absolute top-1/2 right-1/4 w-24 h-24 rounded-full border-2 border-green-500/20 animate-pulse-ring"></div>
+
+    <!-- Connecting Lines Animation -->
+    <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#10b981;stop-opacity:0" />
+          <stop offset="50%" style="stop-color:#10b981;stop-opacity:0.6" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+        </linearGradient>
+      </defs>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <line x1="10%" y1="30%" x2="90%" y2="30%" stroke="url(#lineGradient)" stroke-width="2" class="animate-line-draw"/>
+      <line x1="10%" y1="70%" x2="90%" y2="70%" stroke="url(#lineGradient)" stroke-width="2" class="animate-line-draw" style="animation-delay: 1s;"/>
+      <circle cx="10%" cy="30%" r="5" fill="#10b981" opacity="0.6" class="animate-pulse-slow"/>
+      <circle cx="90%" cy="30%" r="5" fill="#10b981" opacity="0.6" class="animate-pulse-slow" style="animation-delay: 0.5s;"/>
+      <circle cx="10%" cy="70%" r="5" fill="#10b981" opacity="0.6" class="animate-pulse-slow" style="animation-delay: 1s;"/>
+      <circle cx="90%" cy="70%" r="5" fill="#10b981" opacity="0.6" class="animate-pulse-slow" style="animation-delay: 1.5s;"/>
+    </svg>
 
-  <!-- Card -->
-  <div class="group relative overflow-hidden rounded-xl">
-    <img
-      src="imges/Strength Training Area.jpg"
-      alt="Gym"
-      class="w-full h-84 object-cover transition-transform duration-300 group-hover:scale-110"
-    />
-
-    <div class="absolute inset-0  from-black/80 to-transparent flex items-end p-6">
-      <p class="text-sm text-gray-300">
-        Strength Training Area
-      </p>
-    </div>
+    <!-- Radial Glow Effects -->
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-3xl animate-glow-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl animate-glow-pulse" style="animation-delay: 1.5s;"></div>
   </div>
 
-  <!-- Card -->
-  <div class="group relative overflow-hidden rounded-xl">
-    <img
-      src="imges/Cardio Zone.jpg"
-      alt="Gym"
-      class="w-full h-84 object-cover transition-transform duration-300 group-hover:scale-110"
-    />
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 class="text-4xl md:text-5xl font-bold mb-16 dark:text-white animate-slide-in-left">
+      OUR GALLERY<span class="text-green-500 animate-pulse">...</span>
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <div class="absolute inset-0  from-black/80 to-transparent flex items-end p-6">
-      <p class="text-sm text-gray-300">
-        Cardio Zone
-      </p>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="group relative overflow-hidden rounded-xl">
-    <img
-      src="imges/Professional Equipment.jpg"
-      alt="Gym"
-      class="w-full h-84 object-cover transition-transform duration-300 group-hover:scale-110"
-    />
-
-    <div class="absolute inset-0  from-black/80 to-transparent flex items-end p-6">
-      <p class="text-sm text-gray-300">
-        Professional Equipment
-      </p>
-    </div>
-  </div>
-
-</div>
-
-    </div>  
-
-
-
-    <!-- <div class="max-w-xl mx-auto my-20">
-        <div class="w-full flex justify-    ">
-            <img src="imges/Equipments.jfif" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus optio tenetur ea quae unde.</p>
+      <!-- Card 1 -->
+      <div class="group relative overflow-hidden rounded-xl animate-fade-in-up" style="animation-delay: 0.1s;">
+        <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500 animate-gradient-x"></div>
+        <div class="relative">
+          <img
+            src="imges/Strength Training Area.jpg"
+            alt="Gym"
+            class="w-full h-84 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
+            <p class="text-sm text-gray-300 transform transition-all duration-300 group-hover:text-green-400 group-hover:translate-y-0 translate-y-2">
+              Strength Training Area
+            </p>
+          </div>
+          <!-- Hover Corner Accents -->
+          <div class="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
+          <div class="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
         </div>
-    </div> -->
+      </div>
 
+      <!-- Card 2 -->
+      <div class="group relative overflow-hidden rounded-xl animate-fade-in-up" style="animation-delay: 0.2s;">
+        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500 animate-gradient-x"></div>
+        <div class="relative">
+          <img
+            src="imges/Cardio Zone.jpg"
+            alt="Gym"
+            class="w-full h-84 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
+            <p class="text-sm text-gray-300 transform transition-all duration-300 group-hover:text-green-400 group-hover:translate-y-0 translate-y-2">
+              Cardio Zone
+            </p>
+          </div>
+          <div class="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
+          <div class="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
+        </div>
+      </div>
 
+      <!-- Card 3 -->
+      <div class="group relative overflow-hidden rounded-xl animate-fade-in-up" style="animation-delay: 0.3s;">
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-500 animate-gradient-x"></div>
+        <div class="relative">
+          <img
+            src="imges/Professional Equipment.jpg"
+            alt="Gym"
+            class="w-full h-84 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
+            <p class="text-sm text-gray-300 transform transition-all duration-300 group-hover:text-green-400 group-hover:translate-y-0 translate-y-2">
+              Professional Equipment
+            </p>
+          </div>
+          <div class="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
+          <div class="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-green-500 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-12 group-hover:h-12"></div>
+        </div>
+      </div>
 
+    </div>
+  </div>  
 
-     <div class="min-h-screen flex items-center justify-center p-8">
-      <div class="relative w-full max-w-6xl space-y-8">
-        <!-- Top Section - Image left, Text right -->
-        <div class="flex items-center gap-6 ml-auto w-5/6">
+  <!-- Zigzag Content Section -->
+  <div class="min-h-screen flex items-center justify-center p-8 relative z-10">
+    <div class="relative w-full max-w-6xl space-y-16">
+      
+      <!-- Top Section - Image left, Text right -->
+      <div class="flex items-center gap-8 ml-auto w-5/6 animate-slide-in-right">
+        <div class="relative group w-2/3">
+          <!-- Glow effect -->
+          <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
           <img
             src="imges/Equipments.jfif"
             alt=""
-            class="w-2/3 h-64 object-cover rounded-lg shadow-2xl"
+            class="relative w-full h-64 object-cover rounded-lg shadow-2xl transform transition-all duration-500 group-hover:scale-105"
           />
-          <div class="flex-1  bg-opacity-70 text-black dark:text-white p-6 rounded">
-            <p class="text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eos.
-            </p>
-          </div>
+          <!-- Decorative Corner -->
+          <div class="absolute -top-4 -left-4 w-16 h-16 border-l-4 border-t-4 border-green-500 animate-corner-pulse"></div>
+          <div class="absolute -bottom-4 -right-4 w-16 h-16 border-r-4 border-b-4 border-green-500 animate-corner-pulse" style="animation-delay: 0.5s;"></div>
         </div>
+        <div class="flex-1 bg-gray-900/50 backdrop-blur-sm border border-green-500/20 text-white p-8 rounded-lg relative overflow-hidden group">
+          <!-- Animated border -->
+          <div class="absolute inset-0 border-2 border-green-500/0 group-hover:border-green-500/50 rounded-lg transition-all duration-500"></div>
+          <p class="text-sm leading-relaxed relative z-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eos.
+          </p>
+          <!-- Glow dot -->
+          <div class="absolute top-4 right-4 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+        </div>
+      </div>
 
-        <!-- Bottom Section - Text left, Image right -->
-        <div class="flex items-center gap-6 w-5/6 -mt-8">
-          <div class="flex-1  bg-opacity-70 text-black dark:text-white p-6 rounded">
-            <p class="text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iure.
-            </p>
-          </div>
+      <!-- Bottom Section - Text left, Image right -->
+      <div class="flex items-center gap-8 w-5/6 animate-slide-in-left">
+        <div class="flex-1 bg-gray-900/50 backdrop-blur-sm border border-green-500/20 text-white p-8 rounded-lg relative overflow-hidden group">
+          <div class="absolute inset-0 border-2 border-green-500/0 group-hover:border-green-500/50 rounded-lg transition-all duration-500"></div>
+          <p class="text-sm leading-relaxed relative z-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iure.
+          </p>
+          <div class="absolute top-4 left-4 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+        </div>
+        <div class="relative group w-2/3">
+          <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-green-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
           <img
             src="imges/Equipments.jfif"
             alt=""
-            class="w-2/3 h-64 object-cover rounded-lg shadow-2xl"
+            class="relative w-full h-64 object-cover rounded-lg shadow-2xl transform transition-all duration-500 group-hover:scale-105"
           />
+          <div class="absolute -top-4 -right-4 w-16 h-16 border-r-4 border-t-4 border-green-500 animate-corner-pulse"></div>
+          <div class="absolute -bottom-4 -left-4 w-16 h-16 border-l-4 border-b-4 border-green-500 animate-corner-pulse" style="animation-delay: 0.5s;"></div>
         </div>
       </div>
     </div>
+  </div>
 
-
-
-   <div class="absolute top-10 left-1/2 transform -translate-x-1/2">
-      <div class="w-16 h-16 rounded-full border-4 border-green-500 flex items-center justify-center animate-bounce">
-        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </div>
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+    <div class="w-16 h-16 rounded-full border-4 border-green-500 flex items-center justify-center animate-bounce-slow relative">
+      <div class="absolute inset-0 rounded-full border-4 border-green-500 animate-ping-slow"></div>
+      <svg class="w-6 h-6 text-green-500 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
     </div>
-  </section>
-
+  </div>
+</section>
   

@@ -21,6 +21,7 @@
           <button class="px-6 py-2 bg-green-500 text-black rounded-full hover:bg-green-600 transition font-semibold">
             Log In
           </button>
+          <app-toggle-btn/>
         </div>  
     
        
@@ -39,19 +40,19 @@
       </div>
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
         <li>
-         <a  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white ">Home</a>
+         <a (click)="scrollToSection('home')"  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white ">Home</a>
         </li>
         <li>
-          <a  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Gallery</a>
+          <a (click)="scrollToSection('gallery')"  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Gallery</a>
         </li>
         <li>
-          <a  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Plans</a>
+          <a (click)="scrollToSection('plans')" class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Plans</a>
         </li>
         <li>
-          <a  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Our Trainers</a>
+          <a (click)="scrollToSection('trainers')" class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Our Trainers</a>
         </li>
         <li>
-          <a  class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Contact Us</a>
+          <a (click)="scrollToSection('contact')" class="hover:text-green-500 hover:border-b transition duration-150 cursor-pointer dark:text-white">Contact Us</a>
         </li>
       </ul>
     </div>

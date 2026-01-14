@@ -1,14 +1,93 @@
-<section id="contact" class="w-3/4 mx-auto py-24 relative" >
-     <div class="bg-gray-200 backdrop-blur-sm  rounded-3xl p-8 border border-gray-800">
+<section id="contact" class="w-3/4 mx-auto py-24 relative dark:bg-black" >
 
-         <h2 class="text-4xl md:text-5xl font-bold mb-16">Contact Us...</h2>
+  <!-- Advanced Animated Background -->
+  <div class="absolute inset-0">
+    
+    <!-- Animated Gradient Mesh -->
+    <div class="absolute inset-0">
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-green-500/30 rounded-full blur-[150px] animate-morph"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px] animate-morph-reverse"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-teal-500/10 rounded-full blur-[180px] animate-pulse-slow"></div>
+    </div>
+
+    <!-- Geometric Animated Shapes -->
+    <div class="absolute inset-0 opacity-20">
+      <!-- Rotating Hexagons -->
+      <div class="absolute top-20 right-40 w-32 h-32 border-2 border-green-500/40 rotate-45 animate-spin-slow"></div>
+      <div class="absolute bottom-40 left-20 w-24 h-24 border-2 border-green-500/30 animate-spin-reverse"></div>
+      
+      <!-- Floating Triangles -->
+      <div class="absolute top-1/3 left-1/4 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-b-[52px] border-b-green-500/30 animate-float-slow"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[69px] border-b-green-500/20 animate-float-delayed"></div>
+    </div>
+
+    <!-- Matrix-style Falling Lines -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-0 left-[10%] w-px h-32 bg-gradient-to-b from-green-500/60 to-transparent animate-fall" style="animation-delay: 0s;"></div>
+      <div class="absolute top-0 left-[25%] w-px h-24 bg-gradient-to-b from-green-500/40 to-transparent animate-fall" style="animation-delay: 1.5s;"></div>
+      <div class="absolute top-0 left-[40%] w-px h-40 bg-gradient-to-b from-green-500/50 to-transparent animate-fall" style="animation-delay: 3s;"></div>
+      <div class="absolute top-0 left-[60%] w-px h-28 bg-gradient-to-b from-green-500/45 to-transparent animate-fall" style="animation-delay: 2s;"></div>
+      <div class="absolute top-0 left-[75%] w-px h-36 bg-gradient-to-b from-green-500/55 to-transparent animate-fall" style="animation-delay: 4s;"></div>
+      <div class="absolute top-0 left-[90%] w-px h-32 bg-gradient-to-b from-green-500/35 to-transparent animate-fall" style="animation-delay: 2.5s;"></div>
+    </div>
+
+    <!-- Orbiting Particles -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div class="absolute w-[400px] h-[400px] animate-orbit">
+        <div class="absolute top-0 left-1/2 w-3 h-3 bg-green-500/60 rounded-full blur-sm"></div>
+      </div>
+      <div class="absolute w-[300px] h-[300px] animate-orbit-reverse">
+        <div class="absolute top-0 left-1/2 w-2 h-2 bg-emerald-400/50 rounded-full blur-sm"></div>
+      </div>
+      <div class="absolute w-[500px] h-[500px] animate-orbit-slow">
+        <div class="absolute top-0 left-1/2 w-4 h-4 bg-teal-400/40 rounded-full blur-sm"></div>
+      </div>
+    </div>
+
+    <!-- Glowing Dots Network -->
+    <svg class="absolute inset-0 w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="dotGlow">
+          <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+          <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+        </radialGradient>
+      </defs>
+      
+      <!-- Animated Connecting Lines -->
+      <line x1="15%" y1="20%" x2="45%" y2="35%" stroke="#10b981" stroke-width="1" opacity="0.3" class="animate-draw"/>
+      <line x1="45%" y1="35%" x2="75%" y2="25%" stroke="#10b981" stroke-width="1" opacity="0.3" class="animate-draw" style="animation-delay: 0.5s;"/>
+      <line x1="75%" y1="25%" x2="85%" y2="60%" stroke="#10b981" stroke-width="1" opacity="0.3" class="animate-draw" style="animation-delay: 1s;"/>
+      <line x1="20%" y1="70%" x2="50%" y2="80%" stroke="#10b981" stroke-width="1" opacity="0.3" class="animate-draw" style="animation-delay: 1.5s;"/>
+      
+      <!-- Glowing Dots -->
+      <circle cx="15%" cy="20%" r="4" fill="url(#dotGlow)" class="animate-pulse-dot"/>
+      <circle cx="45%" cy="35%" r="5" fill="url(#dotGlow)" class="animate-pulse-dot" style="animation-delay: 0.3s;"/>
+      <circle cx="75%" cy="25%" r="3" fill="url(#dotGlow)" class="animate-pulse-dot" style="animation-delay: 0.6s;"/>
+      <circle cx="85%" cy="60%" r="4" fill="url(#dotGlow)" class="animate-pulse-dot" style="animation-delay: 0.9s;"/>
+      <circle cx="20%" cy="70%" r="5" fill="url(#dotGlow)" class="animate-pulse-dot" style="animation-delay: 1.2s;"/>
+      <circle cx="50%" cy="80%" r="3" fill="url(#dotGlow)" class="animate-pulse-dot" style="animation-delay: 1.5s;"/>
+    </svg>
+
+    <!-- Scan Line Effect -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute w-full h-1 bg-gradient-to-r from-transparent via-green-500/30 to-transparent animate-scan"></div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-overlay">
+      <div class="w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=&quot;0 0 200 200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cfilter id=&quot;noise&quot;%3E%3CfeTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.9&quot; numOctaves=&quot;4&quot; stitchTiles=&quot;stitch&quot;/%3E%3C/filter%3E%3Crect width=&quot;100%&quot; height=&quot;100%&quot; filter=&quot;url(%23noise)&quot;/%3E%3C/svg%3E');"></div>
+    </div>
+  </div>
+     <div class="bg-transparent backdrop-blur-sm  rounded-3xl p-8 border border-gray-800 ">
+
+         <h2 class="text-4xl md:text-5xl font-bold mb-16 dark:text-white">Contact Us...</h2>
           <div class="space-y-6">
             <div>
               <input 
                 type="text"
                 placeholder="Your Name"
                 
-                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full  placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
                 required
               />
             </div>
@@ -18,7 +97,7 @@
                 type="email"
                 placeholder="Your Email"
                 
-                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-full  placeholder-gray-500 focus:outline-none focus:border-green-400 transition"
                 required
               />
             </div>
@@ -28,7 +107,7 @@
                 placeholder="Your Message"
               
                 rows="6"
-                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-3xl text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition resize-none"
+                class="w-full px-6 py-4 bg-transparent border border-green-500 rounded-3xl  placeholder-gray-500 focus:outline-none focus:border-green-400 transition resize-none"
                 required
               ></textarea>
             </div>
@@ -43,6 +122,7 @@
  
   <!-- Footer -->
   <footer class="bg-gray-900 border-t border-gray-800 py-12">
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-4 gap-8">
         <div>
